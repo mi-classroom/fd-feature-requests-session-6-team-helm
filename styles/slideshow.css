@@ -1,0 +1,6 @@
+section#slideshow-recipes {
+  aspect-ratio: 16/9;
+  background-color: var(--primary);
+  color: var(--secondary);
+  object-fit: 100%;
+}
