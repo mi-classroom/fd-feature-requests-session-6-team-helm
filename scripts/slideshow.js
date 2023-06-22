@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var controls = document.querySelectorAll(".controls");
 for (var i = 0; i < controls.length; i++) {
   controls[i].style.display = "inline-block";
@@ -55,3 +56,32 @@ previous.onclick = function () {
   pauseSlideshow();
   previousSlide();
 };
+=======
+document.addEventListener("DOMContentLoaded", function(event) {
+    var slides = document.querySelectorAll("#slideshow-recipes .slideshow-container li");
+    var currentSlide = 0;
+  
+    function showSlide(n) {
+      slides[currentSlide].style.display = "none";
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].style.display = "block";
+    }
+  
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+  
+    function previousSlide() {
+      showSlide(currentSlide - 1);
+    }
+  
+    var nextBtn = document.getElementById("nextBtn");
+    var prevBtn = document.getElementById("prevBtn");
+  
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", previousSlide);
+  
+    showSlide(currentSlide);
+  });
+  
+>>>>>>> 615883cdc31adca28eefd689f70c42c4a368f19a
