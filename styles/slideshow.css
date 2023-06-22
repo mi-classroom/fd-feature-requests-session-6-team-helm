@@ -1,6 +1,12 @@
-section#slideshow-recipes {
+#slideshow-recipes {
   aspect-ratio: 16/9;
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
   object-fit: 100%;
+  position: relative;
+}
+
+#slideshow-recipes ul {
+  list-style-type: none;
+  position: relative;
 }
