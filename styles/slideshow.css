@@ -17,18 +17,24 @@
   height: auto;
   margin: auto;
 }
+
 .slideshow-container ul {
   list-style: none;
   padding: 0;
 }
+
 .slideshow-container li {
   display: none;
 }
+
 .slideshow-container img {
   width: 100%;
   height: auto;
 }
 
-#slideshow-recipes button {
-  align-self: center;
+#prevBtn {
+  margin-left: var(--spacing-padding);
+}
+#nextBtn {
+  margin-right: var(--spacing-padding);
 }
